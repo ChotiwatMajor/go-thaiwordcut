@@ -1,4 +1,4 @@
-module gothaiwordcut
+module github.com/ChotiwatMajor/go-thaiwordcut
 
 go 1.18
 
