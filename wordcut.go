@@ -33,6 +33,12 @@ func (w *Segmenter) loadFileIntoTrie(filePath string) {
 	check(scanner.Err())
 }
 
+func (w *Segmenter) LoadWords(words []string) {
+	for _, word := range words {
+		w.Tree.Insert(word, 1)
+	}
+}
+
 func (w *Segmenter) findSegment(c string) []string {
 	i := 0
 	N := len(c)
